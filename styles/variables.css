@@ -1,1 +1,41 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root {
+    --font-inter: "Inter", sans-serif;
+    --font-press-start: "PressStart2P", monospace;
+    --font-press-start-weight: 400;
+    --font-inter-weight-715: 715;
+    --font-inter-weight-410: 410;
+    --image-gradient: 
+        repeating-linear-gradient(
+            to right,
+            #d3d3d3 0 2px,
+            transparent 2px 4px
+        ),
+        repeating-linear-gradient(
+            to bottom,
+            #d3d3d3 0 2px,
+            transparent 2px 4px
+        ),
+        linear-gradient(
+            to bottom,
+            #e7e7e7 0.01%,
+            #1a1a1a 100%
+        );
+    --page-width: clamp(375px, 100%, 1440px);
+    --content-width: clamp(371px, 100%, 700px);
+    --font-size-header-desktop: 65px;
+    --font-size-paragraph-desktop: 23px;
+    --font-size-header-mobile: 49px;
+    --font-size-paragraph-mobile: 14px;
+    --font-size-card: 18px;
+    --font-size-button: 14px;
+    --font-size-label: 14px;
+    --font-size-dialog: 14px;
+    --stroke-color: rgba(255, 255, 255, 1);
+    --label-color: rgba(0, 0, 0, 1);
+    --accent-color: rgba(0, 0, 0, 1);
+    --button-text-color: rgba(255, 255, 255, 1);
+    --background-color-button: rgba(255, 255, 255, 1);
+    --contour-color: rgba(0, 0, 0, 1);
+    --animation-fill-color: rgba(255,0,0,1);
+}
