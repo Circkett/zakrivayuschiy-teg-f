@@ -122,11 +122,11 @@
 }
 
 .card__image--focus {
-  filter: opacity(75%) grayscale(50%) drop-shadow(-20px 20px 5px #899599e6); 
+  filter: opacity(75%) grayscale(50%) drop-shadow(-20px 20px 5px #899599e6);
 }
 
 .card__image--success {
- filter: contrast(140%) drop-shadow(-20px 20px 5px #04181fe6);
+  filter: contrast(140%) drop-shadow(-20px 20px 5px #04181fe6);
 }
 
 .card__label {
