@@ -10,27 +10,28 @@
 
 */
 
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-inter);
   font-variation-settings: "wght" var(--font-inter-weight-410);
-}
-
-.header {
-  min-block-size: 960px;
-  display: flex;
-  justify-content: center;
-  padding-block-start: 100px;
   background-image: var(--image-gradient),
   url(../images/image_linear_gradient.png);
+  background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  padding-block-start: 100px;
+}
+
 .header_content {
-  block-size: 368px;
+  min-block-size: 368px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -61,7 +62,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-block-start: -398px;
+  margin-block-start: 100px;
   margin-block-end: 100px;
 }
 
@@ -283,6 +284,9 @@
 .card__like-button {
   display: inline-flex;
   align-items: center;
+  justify-content: center;
+  inline-size: 118px;
+  block-size: 38px;
   border: 2px solid #000;
 }
 
@@ -292,6 +296,10 @@
   font-family: var(--font-press-start);
   font-size: var(--font-size-button);
   padding: 12px 37px;
+}
+
+.dialog__button .button__text {
+  text-transform: uppercase;
 }
 
 .button__text,
@@ -354,6 +362,8 @@
 
 .dialog__text {
   line-height: 150%;
+  width: 234px;
+  text-transform: uppercase;
 }
 
 .dialog__button {
@@ -365,7 +375,7 @@
 @media (width <= 375px) {
 
   .header_content {
-    block-size: 327px;
+    min-block-size: 327px;
 
   }
 
@@ -375,10 +385,6 @@
 
 .paragraph_size {
   font-size: var(--font-size-paragraph-mobile);
-}
-
-.main {
-  margin-block-start: -435px;
 }
 
 .card__image {
